@@ -1,0 +1,36 @@
+{
+  "datos": [
+    {
+      "id": 1,
+      "nombre": "nose",
+      "tipo": "444"
+    },
+    {
+      "id": 2,
+      "nombre": "nosex2",
+      "tipo": "111"
+    },
+    {
+      "id": 3,
+      "nombre": "nosex3",
+      "tipo": "35"
+    }
+  ],
+  "datos2": [
+    {
+      "id": 1,
+      "nombre": "velocidad",
+      "tipo": "123"
+    },
+    {
+      "id": 2,
+      "nombre": "SOC",
+      "tipo": "45"
+    },
+    {
+      "id": 3,
+      "nombre": "Temperatura",
+      "tipo": "35"
+    }
+  ]
+}
