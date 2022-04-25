@@ -8,13 +8,13 @@ import React, {useState , useEffect} from 'react';
 
   
 function App() {
-const url= 'http://localhost:3000/datos2'
-const [datos2 , setDatos2] = useState()
+const url= 'https://my-json-server.typicode.com/mjgutierre/TelemetryApp/db'
+const [db , setdb] = useState()
 const fetchApi = async () => {
-  const response = await fetch(url)//cuando se puedan obtener los resultados se guardan en la var datos2 utilizando la funcion setDatos2 
+  const response = await fetch(url)//cuando se puedan obtener los resultados se guardan en la var db utilizando la funcion setdb 
   //console.log(response.status)
   const responseJSON= await response.json()//procesar la respuesta en json
-  setDatos2(responseJSON)
+  setdb(responseJSON)
   }
 
   useEffect( () => {
@@ -25,9 +25,9 @@ const fetchApi = async () => {
     <div className="App">
       Telemetry
       <ul>
-      { !datos2 ? 'Cargando...' : 
-        datos2.map((datos2,index)=>{
-        return <li>{datos2.title}{datos2.completed ? 'check':'not check'}</li>
+      { !db ? 'Cargando...' : 
+        db.map((db,index)=>{
+          return <li>{db.nombre}</li>
         })
       }
       </ul>
